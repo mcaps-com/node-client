@@ -1,0 +1,12 @@
+{
+  "name": "mcaps-client",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node example.mjs"
+  },
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
+}
