@@ -7,6 +7,9 @@
     "start": "node example.mjs"
   },
   "dependencies": {
-    "node-fetch": "^3.0.0"
+    "axios": "^1.7.2",
+    "node-fetch": "^3.0.0",
+    "winston": "^3.13.1",
+    "ws": "^8.18.0"
   }
 }
