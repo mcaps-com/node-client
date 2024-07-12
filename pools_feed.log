@@ -6,3 +6,7 @@ undefined info: message
 undefined info: new pool: DoYUCRcST6a4qJKccjwy2MUgEWGth78CRZevvd6Wpump HA6L1VdCjpD4GKAm9tvrtQAgHvLxjEhrWYzyoWadpR6F 4CuSYc9vD6Kj9T4odXNvwgAh1AuxCjVWLBBdyQNeW9hi
 undefined info: message 
 undefined info: new pool: Ceum99gMhkgicYkCFLujmPmeGzSyoxt6ebGqGzGVpump 2RAqvFPAdaCow1Mmgbu59ASRDP149NdTr4zXZr3oaUet 6qoydbtpmBppDuUBLTXiAJBVbAoDUHYpUggSuAk32tMA
+2024-07-12T07:10:15.243Z info: connect wss://stream.mcaps.com/ws/pools
+2024-07-12T07:10:16.140Z info: Connected to wss://stream.mcaps.com/ws/pools
+2024-07-12T07:10:42.920Z info: message: {"pool":{"ttype":"INIT","token":"9V7kkxs2PUpnyN63jDrWo5eKXxruLYgoWGRLfRuoXVJN","bondingcurve":"347j93Xn2xpvmygtnYRezdb99Wkrk9Knm4aEo5yffhxs","ascbondingcurve":"9AzWT2pw7qQdzdTspPAQmreLX4j5mNukij2XaGZS4jUA","deployer":"G2YtD3QZYLufUXC9s8ovRqM4mowSjmVkj6ZmvKgxe5WQ","sig":"2pWjoCk3hVyhHSsUtTsH95tvRyGZSX8QSAUj7PooqeuCJuxjo7d3iaPwxYyxFXzou3MwwjS8hPC1vqoPLrhHLezw","unix_time_utc":1720768242}}
+2024-07-12T07:10:42.921Z info: new pool: 9V7kkxs2PUpnyN63jDrWo5eKXxruLYgoWGRLfRuoXVJN 347j93Xn2xpvmygtnYRezdb99Wkrk9Knm4aEo5yffhxs 9AzWT2pw7qQdzdTspPAQmreLX4j5mNukij2XaGZS4jUA

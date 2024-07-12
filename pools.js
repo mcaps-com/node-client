@@ -8,8 +8,7 @@ const logger = winston.createLogger({
     level: 'info',
     format: format.combine(
         format.timestamp(),
-        format.printf(info => `${info.timestamp
-            .timestamp} ${info.level}: ${info.message}`)
+        format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`)
     ),
     transports: [
         new winston.transports.Console(),
@@ -28,7 +27,7 @@ async function poolsFeed() {
         });
 
         websocket.on('message', (msg) => {
-            logger.info('message ', msg);
+            logger.info(`message: ${msg}`);
             const poolinfo = JSON.parse(msg).pool;
             const { token, bondingcurve, ascbondingcurve } = poolinfo;
             logger.info(`new pool: ${token} ${bondingcurve} ${ascbondingcurve}`);
