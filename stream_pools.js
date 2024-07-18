@@ -28,7 +28,7 @@ async function poolsFeed() {
 
         websocket.on('message', (msg) => {
             logger.info(`message: ${msg}`);
-            const poolinfo = JSON.parse(msg).pool;
+            const poolinfo = JSON.parse(msg);
             const { token, bondingcurve, ascbondingcurve } = poolinfo;
             logger.info(`new pool: ${token} ${bondingcurve} ${ascbondingcurve}`);
         });
