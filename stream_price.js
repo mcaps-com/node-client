@@ -29,7 +29,7 @@ async function poolsFeed() {
         websocket.on('message', (msg) => {
 
             const data = JSON.parse(msg);
-            logger.info(`Token ${data.price.token}\tprice ${data.price.price_sol} \t amount SOL ${data.price.amount_sol} `);
+            logger.info(`Token ${data.token}\tprice ${data.price_sol} \t amount SOL ${data.amount_sol} `);
         });
 
         websocket.on('error', (e) => {
