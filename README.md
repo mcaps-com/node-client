@@ -1,3 +1,3 @@
 # mcaps api nodejs
 
-node example.js
+node stream_price.js
