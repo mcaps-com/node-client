@@ -19,6 +19,9 @@ const logger = winston.createLogger({
 async function poolsFeed() {
     const uri = "wss://stream.mcaps.com/ws/price";
     logger.info(`connect ${uri}`);
+    let eventCount = 0;
+    let lastLogTime = Date.now();
+
     try {
         const websocket = new WebSocket(uri);
 
@@ -27,9 +30,17 @@ async function poolsFeed() {
         });
 
         websocket.on('message', (msg) => {
-
+            eventCount++;
             const data = JSON.parse(msg);
             logger.info(`Token ${data.token}\tprice ${data.price_sol} \t amount SOL ${data.amount_sol} `);
+
+            const currentTime = Date.now();
+            if (currentTime - lastLogTime >= 5000) {
+                const eventsPerSecond = (eventCount / 5).toFixed(2);
+                logger.info(`Events per second: ${eventsPerSecond}`);
+                eventCount = 0;
+                lastLogTime = currentTime;
+            }
         });
 
         websocket.on('error', (e) => {
